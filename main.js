@@ -36,3 +36,4 @@ function clearLetters(){
     }
 }
 printLetters(phrases[phrasesIndex]);
+

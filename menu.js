@@ -16,4 +16,15 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("menu-button").addEventListener("click", showMenu);
     document.getElementById("close-menu").addEventListener("click", closeMenu);
     clickMenuItems();
+
+    //set #nav-header position:static before using the ff:
+    window.addEventListener("scroll", function(){
+        // console.log(this.window.scrollY);
+        let intro = this.document.querySelector(".intro");
+        if(this.window.scrollY >= (intro.offsetHeight+intro.offsetTop)){
+            this.document.querySelector("#nav-header").style.position = "sticky";
+        } else 
+        this.document.querySelector("#nav-header").style.position = "revert";
+    });
+
 })

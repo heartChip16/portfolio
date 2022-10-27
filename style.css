@@ -5,7 +5,7 @@
 #nav-header {
     padding-top: 16px;
     padding-bottom: 16px;
-    position:sticky;
+    position:static;  /*either sticky or static, depends*/
     top: 0%;
     background-color: black;
     text-align: center;
