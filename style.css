@@ -334,3 +334,7 @@ section form > h2 {
 .proj {
     color: white;
 }
+
+input, textarea {
+    opacity: 90%;
+}
