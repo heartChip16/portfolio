@@ -11,6 +11,9 @@
     text-align: center;
     font-size: medium;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
 }
 
 :root {
@@ -42,6 +45,13 @@ section nav ul {
     list-style: none;
 }
 
+.social-links-navbar {
+    display: flex;  
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
+}
+
 header nav > a:last-child {
     margin-right: revert;
 }
@@ -51,6 +61,12 @@ header nav > a:hover {
      background-color:teal;
      /* display:inline-block;
      transform: scale(1.2); */
+}
+
+header ul > li:hover {
+    background-color:white;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 section {
@@ -97,7 +113,7 @@ color: #607d8b;
 #profile-img {
     border-radius: 50%;
     width:220px;
-    height:250px;
+    height:220px;
     /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
     filter: drop-shadow(12px 4px 6px gray);
     transition-property: transform;
@@ -110,15 +126,18 @@ color: #607d8b;
     transform:scale(1.1);
 }
 
-.social-links img{
+ .social-links-navbar img{
     height:20px;
     width:20px;
     margin:auto 10px;
 }
 
-.social-links a{
-    
+.social-links-bottom {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
 }
+
 
 #about-me {
 
@@ -205,7 +224,7 @@ section form > h2 {
     display:none;
 }
 @media (width < 500px) {
-    .default-nav {
+    .default-nav, .social-links-navbar  {
         display:none;
     }
     .mobile-nav {
@@ -347,4 +366,30 @@ li >a.proj:hover {
 .notdone {
     color: white;
     opacity: 20%;
+}
+
+.online-font {
+font-family: "Courier New", Courier, monospace;
+/* font-size: 25px; */
+letter-spacing: 2px;
+word-spacing: 2px;
+/* color: #000000; */
+font-weight: bold;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+.ingrid {
+    font-family: 'Dancing Script', cursive;
+/* font-size: 20px; */
+letter-spacing: 0px;
+word-spacing: 0px;
+color: #000000;
+/* font-weight: normal; */
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
 }

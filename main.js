@@ -1,6 +1,6 @@
 const dynamicContent = document.getElementById("dynamic-text") ;
 const phrases = ["an Electronics Engineer." ,"a Freelancer.", "a Web Developer."];
-const typingSpeed = 100;
+const typingSpeed = 300;
 const erasingSpeed = 75;
 let letterIndex = 0;
 let phrasesIndex=0;

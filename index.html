@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ingrid's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing%20Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="menu">
@@ -29,6 +35,37 @@
         ><a href="#projects">Projects</a>
         <a href="#contact-me">Contact Me</a>
       </nav>
+      <ul class="social-links-navbar">
+        <li>
+          <a href="https://twitter.com/ingrid_ibe" target="_blank"
+            ><img
+              width="30"
+              height="30"
+              src="twitterlogo.png"
+              alt="Twitter Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ingrid-torres-3428782a/"
+            target="_blank"
+            ><img
+              width="30"
+              height="30"
+              src="linkedinlogo.png"
+              alt="Linkedin Logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ingrid_ibe31/" target="_blank"
+            ><img
+              width="30"
+              height="30"
+              src="instagram.png"
+              alt="Instagram Logo"
+          /></a>
+        </li>
+      </ul>
       <nav class="mobile-nav">
         <button id="menu-button">Menu</button>
       </nav>
@@ -40,35 +77,10 @@
           src="./me_selfie.png"
           alt="Ingrid Torres profile image"
         />
-        <h1>Hi, I'm Ingrid</h1>
-        <p>
+        <h1 class="ingrid">Hi, I'm Ingrid</h1>
+        <p class="online-font">
           I am
           <span id="dynamic-text" class="dynamic-text-color"></span>
-        </p>
-        <p class="social-links">
-          <a href="https://twitter.com/ingrid_ibe" target="_blank"
-            ><img
-              width="30"
-              height="30"
-              src="twitterlogo.png"
-              alt="Twitter Logo"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/ingrid-torres-3428782a/"
-            target="_blank"
-            ><img
-              width="30"
-              height="30"
-              src="linkedinlogo.png"
-              alt="Linkedin Logo"
-          /></a>
-          <a href="https://www.instagram.com/ingrid_ibe31/" target="_blank"
-            ><img
-              width="30"
-              height="30"
-              src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
-              alt="Instagram Logo"
-          /></a>
         </p>
       </article>
       <div id="div-sections">
@@ -243,6 +255,9 @@
               <button type="submit">Send</button>
             </div>
           </form>
+          <br />
+
+          <br />
         </section>
       </div>
     </main>
