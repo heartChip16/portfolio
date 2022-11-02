@@ -331,10 +331,15 @@ section form > h2 {
     
 }
 
-.proj {
-    color: white;
-}
 
 input, textarea {
     opacity: 90%;
+}
+
+li >a.proj {
+    color: #607d8b;
+}
+
+li >a.proj:hover {
+    color: white;
 }
