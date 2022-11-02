@@ -343,3 +343,8 @@ li >a.proj {
 li >a.proj:hover {
     color: white;
 }
+
+li .notdone {
+    color: white;
+    opacity: 50%;
+}
