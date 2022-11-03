@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     
     // localStorage.setItem("theme","light");
-    checkThemePreference();
+    
     themeSwitcher1.addEventListener("click", switchTheme);
     themeSwitcher2.addEventListener("click", switchTheme);
     // console.log("theme: ", theme);
-    
+    checkThemePreference();
 
 })
 
