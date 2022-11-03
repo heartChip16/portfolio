@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Ingrid's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,11 +38,20 @@
     </section>
     <header id="nav-header">
       <nav class="default-nav">
-        <a href="#about-me">About Me</a
-        ><a href="#qualifications">Qualifications</a
-        ><a href="#hobbies">Hobbies</a><a href="#proficiency">Proficiency</a
-        ><a href="#projects">Projects</a>
-        <a href="#contact-me">Contact Me</a>
+        <section id="section-theme">
+          <button id="theme-switcher1">Dark</button>
+        </section>
+        <section id="section-menu">
+          <a href="#about-me">About Me</a
+          ><a href="#qualifications">Qualifications</a
+          ><a href="#hobbies">Hobbies</a><a href="#proficiency">Proficiency</a
+          ><a href="#projects">Projects</a>
+          <a href="#contact-me">Contact Me</a>
+        </section>
+      </nav>
+      <nav class="mobile-nav">
+        <button id="theme-switcher2">Dark</button>
+        <button id="menu-button">Menu</button>
       </nav>
       <ul class="social-links-navbar">
         <li>
@@ -82,9 +92,6 @@
           /></a>
         </li>
       </ul>
-      <nav class="mobile-nav">
-        <button id="menu-button">Menu</button>
-      </nav>
     </header>
     <main class="container">
       <article class="intro">
@@ -181,42 +188,6 @@
               </ul>
             </section>
           </section>
-
-          <!-- <table id="table-default">
-            <tr>
-              <th>FrontEnd</th>
-              <th>Backend</th>
-              <th>Database</th>
-            </tr>
-            <tr valign="top">
-              <td>
-                <ul style="list-style-type: none">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Angular</li>
-                  <li>React</li>
-                  <li>Vue</li>
-                  <li>jQuery</li>
-                  <li>Swift</li>
-                </ul>
-              </td>
-              <td>
-                <ul style="list-style-type: none">
-                  <li>Python</li>
-                  <li>JavaScript</li>
-                  <li>PHP</li>
-                  <li>Java</li>
-                  <li>Ruby</li>
-                  <li>Golang</li>
-                  <li>C#</li>
-                </ul>
-              </td>
-              <td>
-               
-              </td>
-            </tr>
-          </table> -->
         </section>
 
         <section id="projects">
@@ -269,7 +240,7 @@
                 cols="30"
                 rows="10"
               ></textarea>
-              <button type="submit">Send</button>
+              <button type="submit" id="submit">Send</button>
             </div>
           </form>
           <br />
@@ -283,5 +254,6 @@
     </footer>
     <script src="main.js"></script>
     <script src="menu.js"></script>
+    <script src="theme.js"></script>
   </body>
 </html>
