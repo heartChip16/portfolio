@@ -194,7 +194,7 @@ section form > h2 {
 .mobile-nav, .menu {
     display:none;
 }
-@media (width < 1100px) {
+@media (width < 924px) {
 
     #nav-header {
         display: flex;
@@ -261,7 +261,7 @@ section form > h2 {
         padding: 5px;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    }
+    } 
 
 }
 
