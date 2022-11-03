@@ -251,6 +251,9 @@ section form > h2 {
         display:none;
     }
 
+}
+
+ @media (width<=625px){
     #div-sections {
         width:100%;
         margin:auto;
@@ -259,50 +262,15 @@ section form > h2 {
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     } 
-
 }
-
-/* @media (width<=625px){
-    #div-sections {
-        width:100%;
-        margin:auto;
-        background-color: #2e2d2d;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    } 
-    .default-nav  {
-        display:none;
-    }
-    .mobile-nav {
-        display: revert;
-        padding-left: 20px;
-        display:flex;
-    }
-
-}
-*/
 
 @media (width <=400px){
     #profile-img {
         width: 70%;
         height: 70%;
     }
-  }
+} 
 
-
-/* @media (pointer:none), (pointer:coarse) {
-    #div-sections {
-        width:100%;
-        margin:auto;
-        background-color: #2e2d2d;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    } 
-
-}
-*/
 
 #proficiency .cards{
     display: grid;
