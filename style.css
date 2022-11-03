@@ -194,7 +194,7 @@ section form > h2 {
 .mobile-nav, .menu {
     display:none;
 }
-@media (width < 924px) {
+@media (width < 1500px) {
 
     #nav-header {
         display: flex;
@@ -270,6 +270,18 @@ section form > h2 {
         width: 70%;
         height: 70%;
     }
+}
+
+/* @media (pointer:none), (pointer:coarse) {
+    #div-sections {
+        width:100%;
+        margin:auto;
+        background-color: #2e2d2d;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }  */
+
 }
 
 #proficiency .cards{
