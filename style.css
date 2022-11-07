@@ -26,6 +26,8 @@
     --spacing-small: calc(var(--spacing-regular)/2);
     color-scheme: dark light;
     background-color: black;
+
+    --font-size-mobile: 1.2rem ;
 }
 
 footer {
@@ -105,7 +107,7 @@ color: #607d8b;
     margin: -16px;
     padding: 16px;
     background-color: #c9c5c5;
-    color: black;
+    /* color: black; */
     text-align: center;
 }
 
@@ -195,7 +197,7 @@ section form > h2 {
     display:none;
 }
 
-@media (width < 1500px) {
+@media (width < 1000px) {
 
     #nav-header {
         display: flex;
@@ -233,7 +235,7 @@ section form > h2 {
         right: 16px;
         top:16px;
         background:transparent;
-        font-size:xx-large;
+        font-size: xx-large;
         border:none;
         color:#607d8b;
     }
@@ -251,9 +253,6 @@ section form > h2 {
         display:none;
     }
 
-}
-
- @media (width<=625px){
     #div-sections {
         width:100%;
         margin:auto;
@@ -262,14 +261,38 @@ section form > h2 {
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     } 
-}
 
-@media (width <=400px){
+    body {
+        font-size: var(--font-size-mobile);
+        width:100%;
+    }
+
     #profile-img {
         width: 70%;
         height: 70%;
     }
-} 
+
+
+
+}
+
+ /* @media (width<=625px){
+    #div-sections {
+        width:100%;
+        margin:auto;
+        background-color: #2e2d2d;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    } 
+} */
+
+/* @media (width <=400px){
+    #profile-img {
+        width: 70%;
+        height: 70%;
+    }
+}  */
 
 
 #proficiency .cards{
@@ -379,7 +402,7 @@ text-transform: none;
 }
 
 
-.ingrid {
+#ingrid {
     font-family: 'Dancing Script', cursive;
     letter-spacing: 0px;
     word-spacing: 0px;
@@ -387,6 +410,8 @@ text-transform: none;
     font-style: normal;
     font-variant: normal;
     text-transform: none;
+    color: black !important;
+    font-size: 1.8rem;
     }
 
 
@@ -414,90 +439,6 @@ text-transform: none;
 } 
 
 
- @media (prefers-color-scheme:dark) {
-    body {
-        background-color: black;
-        color: black;
-    }
-    #nav-header {
-        background: #303f46;
-        color: white;
-        padding: 4px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-
-    .default-nav > a{
-        color: white;
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-    }
-    .intro {
-        background-color: black;
-        
-    }
-    .ingrid {
-        color: white;
-    }
-    #div-sections {
-        background: black;
-        color: white;
-        border: 2px solid #607d8b;
-        box-shadow: 3px 3px 18px 9px #33424a;
-    }
-    h1, h2 {
-        color: white !important;
-    }
-
-    .card {
-        border: 2px solid #607d8b;
-    }
-
-    #contact-me form input, #contact-me form textarea {
-        color: white; 
-        background-color: #303f46;
-        font-size: 1.1rem;
-        opacity:100%;
-        border-radius: 5px;
-        padding: 5px;
-        font-family: monospace;
-    }
-    
-    #contact-me form #submit {
-        background-color: #303f46;
-        font-size: 1.1rem;
-        border-radius: 6px;
-        padding: 5px;
-        color: white;
-        opacity: 100%;
-    }
-
-    /* start of light theme styles inside dark theme*/
-    /* body.light-theme {
-        background-color: var(--background-color);
-        color: whitesmoke;
-        }
-
-    .ingrid.light-theme {
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: 0px;
-        word-spacing: 0px;
-        color: revert;
-        text-decoration: none;
-        font-style: normal;
-        font-variant: normal;
-        text-transform: none;
-        } */
-      
-        /* end of light-theme styles inside dark-theme */
-}  
-
-.intro.dark-theme {
-    background-color: black;
-    color: white;
-}
-
 #nav-header.dark-theme {
     background: #303f46;
     color: white;
@@ -513,10 +454,6 @@ text-transform: none;
     flex-wrap: wrap;
 }
 
-.ingrid.dark-theme {
-    color: white;
-}
-
 #div-sections.dark-theme {
     background: black;
     color: white;
@@ -524,7 +461,7 @@ text-transform: none;
     box-shadow: 3px 3px 18px 9px #33424a;
 }
 h1.dark-theme, h2.dark-theme {
-    color: white !important;
+    color: white;
 }
 
 .card.dark-theme {
@@ -576,7 +513,7 @@ h1.dark-theme, h2.dark-theme {
     flex-wrap: wrap;
 }
 
-.ingrid.dark-theme {
+#ingrid.dark-theme {
     color: white !important;
 }
 
@@ -587,7 +524,7 @@ h1.dark-theme, h2.dark-theme {
     box-shadow: 3px 3px 18px 9px #33424a;
 }
 h1.dark-theme, h2.dark-theme {
-    color: white !important;
+    color: white ;
 }
 
 .card.dark-theme {
@@ -613,4 +550,133 @@ h1.dark-theme, h2.dark-theme {
     opacity: 100%;
 }
 /* end of dark theme styles */
+
+/*start of color scheme dark*/
+ @media (prefers-color-scheme:dark) {
+    body {
+        background-color: black;
+        color: black;
+    }
+    #nav-header {
+        background: #303f46;
+        color: white;
+        padding: 4px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .default-nav > a{
+        color: white;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .intro {
+        background-color: black;
+        
+    }
+
+    #div-sections {
+        background: black;
+        color: white;
+        border: 2px solid #607d8b;
+        box-shadow: 3px 3px 18px 9px #33424a;
+    }
+    h1, h2 {
+        color: white ;
+    }
+
+    #ingrid {
+        color: white !important;
+    }
+
+    .card {
+        border: 2px solid #607d8b;
+    }
+
+    #contact-me form input, #contact-me form textarea {
+        color: white; 
+        background-color: #303f46;
+        font-size: 1.1rem;
+        opacity:100%;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: monospace;
+    }
+    
+    #contact-me form #submit {
+        background-color: #303f46;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        padding: 5px;
+        color: white;
+        opacity: 100%;
+    }
+
+    /* start of light theme styles inside dark theme*/
+    body.light-theme {
+        background-color: #c9c5c5;
+    }
+    .intro.light-theme {
+        background-color: #c9c5c5;
+        color: black;
+    }
+    
+    #nav-header.light-theme {
+        background: black;
+        color: whitesmoke;
+        padding: 4px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    /*not yet modified:*/
+    .default-nav.light-theme > a{
+        color: white;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    
+    #div-sections.light-theme {
+        background: #2e2d2d;
+        color: whitesmoke;
+        border: 2px solid #607d8b;
+        box-shadow: 3px 3px 18px 9px #33424a;
+    }
+    h1.light-theme, h2.light-theme {
+        color: #607d8b;
+    }
+    
+   #ingrid.light-theme {
+        color: black !important;
+    }
+    
+    /* .card.light-theme {
+        border: 2px solid #607d8b;
+    } */
+    
+    #contact-me form input.light-theme, #contact-me form textarea.light-theme {
+        color: white; 
+        background-color: #303f46;
+        font-size: 1.1rem;
+        opacity:100%;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: monospace;
+    }
+    
+    #contact-me form #submit.light-theme {
+        background-color: #303f46;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        padding: 5px;
+        color: white;
+        opacity: 100%;
+    }
+      
+        /* end of light-theme styles inside dark-theme */
+} 
+
+/* end of color scheme dark */
+
 
