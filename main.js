@@ -40,10 +40,10 @@ printLetters(phrases[phrasesIndex]);
 
 $(document).ready(function(){
     var ua = navigator.userAgent;
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua))
-       $('a.mobile-other').show();
-    else if(/Chrome/i.test(ua))
+    if(/Chrome/i.test(ua))
        $('a.chrome').show();
+    else if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua))
+       $('a.mobile-other').show();
     else
        $('a.desktop-other').show();
 });
