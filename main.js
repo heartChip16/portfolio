@@ -41,7 +41,8 @@ printLetters(phrases[phrasesIndex]);
 $(document).ready(function(){
     var ua = navigator.userAgent;
     if(/Chrome/i.test(ua))
-       $('a.chrome').show();
+    //    $('a.chrome').show();
+        $('a.desktop-other').show();
     else if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua))
        $('a.mobile-other').show();
     else
