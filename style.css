@@ -202,7 +202,7 @@ section form > h2 {
     body {
         max-width: 400px;
     }
-    
+
     #nav-header {
         display: flex;
     }
@@ -276,6 +276,11 @@ section form > h2 {
         height: 70%;
     }
 
+    #proficiency .cards{
+    display: block;
+    /* grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
+    /* gap: 10px; */
+}
 
 
 }

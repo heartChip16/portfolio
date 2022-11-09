@@ -5,11 +5,6 @@ const erasingSpeed = 75;
 let letterIndex = 0;
 let phrasesIndex=0;
 
-var viewMode = getCookie("view-mode");
-if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
-
 
 function printLetters(phrase){
     if(letterIndex==phrase.length) {
