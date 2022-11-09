@@ -197,93 +197,7 @@ section form > h2 {
     display:none;
 }
 
-@media (width < 1100px) {
 
-    body {
-        max-width: 400px;
-    }
-
-    #nav-header {
-        display: flex;
-    }
-    .social-links-navbar {
-        margin-right: 10px;
-        margin-left: auto;
-    }
-    .default-nav  {
-        display:none;
-    }
-    .mobile-nav {
-        display: revert;
-        padding-left: 20px;
-        display:flex;
-    }
-    .menu {
-         display:grid;
-        grid-column: 2 span 1;
-        height: 0;
-        width:100%;
-        overflow:hidden; 
-        position:fixed; 
-        top:0;
-        z-index: 2;
-        background: var(--background-color);
-        transition: height 0.5s ease-in-out;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius:10px;
-    }
-    
-    
-    #close-menu {
-        position:absolute;
-        right: 16px;
-        top:16px;
-        background:transparent;
-        font-size: xx-large;
-        border:none;
-        color:#607d8b;
-    }
-    #menu-button, #theme-switcher2 {
-        display: block;
-        background:transparent;
-        color: white;
-        border-radius: 5px;
-        margin-left: auto;
-        margin-right: 10px;
-        padding: 5px;
-    }
-
-    #nav-header .default-nav section {
-        display:none;
-    }
-
-    #div-sections {
-        width:100%;
-        margin:auto;
-        background-color: #2e2d2d;
-        padding: 5px;
-        border-radius: 5px;
-        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
-    } 
-
-    body {
-        font-size: var(--font-size-mobile);
-        width:100%;
-    }
-
-    #profile-img {
-        width: 70%;
-        height: 70%;
-    }
-
-    #proficiency .cards{
-    display: block;
-    /* grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
-    /* gap: 10px; */
-}
-
-
-}
 
  /* @media (width<=625px){
     #div-sections {
@@ -448,6 +362,11 @@ text-transform: none;
 } 
 
 
+
+
+
+/* dark theme styles*/
+
 #nav-header.dark-theme {
     background: #303f46;
     color: white;
@@ -495,7 +414,6 @@ h1.dark-theme, h2.dark-theme {
     color: white;
     opacity: 100%;
 }
-/* dark theme styles*/
 
  body.dark-theme {
     background-color: black;
@@ -688,4 +606,93 @@ h1.dark-theme, h2.dark-theme {
 
 /* end of color scheme dark */
 
+/* start of media for mobile */
+@media (width < 1100px) {
 
+    body {
+        max-width: 400px;
+    }
+
+    #nav-header {
+        display: flex;
+    }
+    .social-links-navbar {
+        margin-right: 10px;
+        margin-left: auto;
+    }
+    .default-nav  {
+        display:none;
+    }
+    .mobile-nav {
+        display: revert;
+        padding-left: 20px;
+        display:flex;
+    }
+    .menu {
+         display:grid;
+        grid-column: 2 span 1;
+        height: 0;
+        width:100%;
+        overflow:hidden; 
+        position:fixed; 
+        top:0;
+        z-index: 2;
+        background: var(--background-color);
+        transition: height 0.5s ease-in-out;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius:10px;
+    }
+    
+    
+    #close-menu {
+        position:absolute;
+        right: 16px;
+        top:16px;
+        background:transparent;
+        font-size: xx-large;
+        border:none;
+        color:#607d8b;
+    }
+    #menu-button, #theme-switcher2 {
+        display: block;
+        background:transparent;
+        color: white;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    #nav-header .default-nav section {
+        display:none;
+    }
+
+    #div-sections {
+        width:100%;
+        margin:auto;
+        background-color: #2e2d2d;
+        padding: 5px;
+        border-radius: 5px;
+        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    } 
+
+    body {
+        font-size: var(--font-size-mobile);
+        width:100%;
+    }
+
+    #profile-img {
+        width: 70%;
+        height: 70%;
+    }
+
+    #proficiency .cards{
+    display: block;
+    /* grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
+    /* gap: 10px; */
+}
+
+
+}
+
+/* end of media for mobile */
