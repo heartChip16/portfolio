@@ -690,6 +690,83 @@ h1.dark-theme, h2.dark-theme {
     display: block;
     /* grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
     /* gap: 10px; */
+
+
+/*start of color scheme dark*/
+@media (prefers-color-scheme:dark) {
+    body {
+        background-color: black;
+        color: black;
+    }
+    #nav-header {
+        background: #303f46;
+        color: white;
+        padding: 4px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .intro {
+        background-color: black;
+        
+    }
+
+    #div-sections {
+        background: black;
+        color: white;
+        border: 2px solid #607d8b;
+        /* box-shadow: 3px 3px 18px 9px #33424a; */
+    }
+    h1, h2 {
+        color: white ;
+    }
+
+    #ingrid {
+        color: white !important;
+    }
+
+    .cardsection {
+        border: 2px solid #607d8b;
+    }
+
+    #contact-me form input, #contact-me form textarea {
+        color: white; 
+        background-color: #303f46;
+        font-size: 1.1rem;
+        opacity:100%;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: monospace;
+    }
+    
+    #contact-me form #submit {
+        background-color: #303f46;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        padding: 5px;
+        color: white;
+        opacity: 100%;
+    }
+
+    /* start of light theme styles inside dark theme*/
+    body.light-theme {
+        background-color: #c9c5c5;
+    }
+    .intro.light-theme {
+        background-color: #c9c5c5;
+        color: black;
+    }
+    
+    #nav-header.light-theme {
+        background: black;
+        color: whitesmoke;
+        padding: 4px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    } 
+        /* end of light-theme styles inside dark-theme */
+} 
+
 }
 
 
