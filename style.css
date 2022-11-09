@@ -33,6 +33,9 @@ html, body {
     background-color: black;
 
     --font-size-mobile: 1.2rem ;
+    /* --font1:Verdana, Geneva, Tahoma, sans-serif; */
+    --font1: monospace;
+
 }
 
 footer {
@@ -110,7 +113,7 @@ body {
     padding: 16px;  
 }
 
-.container1 #div-sections  >section > h2 {
+.container1 #div-sections  >section > .h2-divs {
 text-align: center;
 margin-top:40px;
 color: #607d8b;
@@ -178,7 +181,8 @@ color: #607d8b;
     justify-content: center;
 }
 
-#qualifications section >h2{
+/* #qualifications section >h2{ */
+    .h2-divs {
     text-align: center;
     color: #607d8b;
 }
@@ -208,9 +212,6 @@ p {
     width: 100%;
 }
 
-section form > h2 {
-    color: #607d8b;
-}
 
 .mobile-nav, .menu {
     display:none;
@@ -243,7 +244,7 @@ section form > h2 {
     gap: 10px;
 }
 
-#proficiency h1 {
+#proficiency .h2-divs {
     color: #607d8b;
     margin: 10px;
 }
@@ -296,6 +297,7 @@ text-decoration: none;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
+font-size: x-large;
 }
 
 #contact-me form {
@@ -355,7 +357,7 @@ text-transform: none;
     font-variant: normal;
     text-transform: none;
     color: black !important;
-    font-size: 1.8rem;
+    font-size: 2rem;
     }
 
 
@@ -412,8 +414,9 @@ text-transform: none;
     border: 2px solid #607d8b;
     /* box-shadow: 3px 3px 18px 9px #33424a; */
 }
-h1.dark-theme, h2.dark-theme {
+ .h2-divs.dark-theme {
     color: white;
+    font-family: var(--font1);
 }
 
 .cardsection.dark-theme {
@@ -477,8 +480,10 @@ h1.dark-theme, h2.dark-theme {
     border: 2px solid #607d8b;
     /* box-shadow: 3px 3px 18px 9px #33424a; */
 }
-h1.dark-theme, h2.dark-theme {
+ .h2-divs.dark-theme {
     color: white ;
+    font-family:var(--font1);
+
 }
 
 .cardsection.dark-theme {
@@ -541,8 +546,10 @@ h1.dark-theme, h2.dark-theme {
         border: 2px solid #607d8b;
         /* box-shadow: 3px 3px 18px 9px #33424a; */
     }
-    h1, h2 {
+   .h2-divs {
         color: white ;
+    font-family: var(--font1);
+
     }
 
     #ingrid {
@@ -602,8 +609,10 @@ h1.dark-theme, h2.dark-theme {
         border: 2px solid #607d8b;
         /* box-shadow: 3px 3px 18px 9px #33424a; */
     }
-    h1.light-theme, h2.light-theme {
+    .h2-divs.light-theme {
         color: #607d8b;
+    font-family: var(--font1);
+
     }
     
    #ingrid.light-theme {
@@ -753,8 +762,10 @@ h1.dark-theme, h2.dark-theme {
         border: 2px solid #607d8b;
         /* box-shadow: 3px 3px 18px 9px #33424a; */
     }
-    h1, h2 {
+    .h2-divs {
         color: white ;
+    font-family: var(--font1);
+
     }
 
     #ingrid {
