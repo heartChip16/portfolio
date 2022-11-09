@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     document.querySelector("#div-sections").classList.add("dark-theme");
                     document.querySelector("h1").classList.add("dark-theme");
                     document.querySelector("h2").classList.add("dark-theme");
-                    document.querySelector(".card").classList.add("dark-theme");
+                    document.querySelector(".cardsection").classList.add("dark-theme");
                     document.querySelector("#contact-me form input").classList.add("dark-theme");
                     document.querySelector("#contact-me form textarea").classList.add("dark-theme");
                     document.querySelector("#contact-me form #submit").classList.add("dark-theme");
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 document.querySelector("#div-sections").classList.remove("dark-theme");
                 document.querySelector("h1").classList.remove("dark-theme");
                 document.querySelector("h2").classList.remove("dark-theme");
-                document.querySelector(".card").classList.remove("dark-theme");
+                document.querySelector(".cardsection").classList.remove("dark-theme");
                 document.querySelector("#contact-me form input").classList.remove("dark-theme");
                 document.querySelector("#contact-me form textarea").classList.remove("dark-theme");
                 document.querySelector("#contact-me form #submit").classList.remove("dark-theme");
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             document.querySelector("#div-sections").classList.add("dark-theme");
             document.querySelector("h1").classList.add("dark-theme");
             document.querySelector("h2").classList.add("dark-theme");
-            document.querySelector(".card").classList.add("dark-theme");
+            document.querySelector(".cardsection").classList.add("dark-theme");
             document.querySelector("#contact-me form input").classList.add("dark-theme");
             document.querySelector("#contact-me form textarea").classList.add("dark-theme");
             document.querySelector("#contact-me form #submit").classList.add("dark-theme");  
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             document.querySelector("#div-sections").classList.remove("light-theme");
             document.querySelector("h1").classList.remove("light-theme");
             document.querySelector("h2").classList.remove("light-theme");
-            document.querySelector(".card").classList.remove("light-theme");
+            document.querySelector(".cardsection").classList.remove("light-theme");
             document.querySelector("#contact-me form input").classList.remove("light-theme");
             document.querySelector("#contact-me form textarea").classList.remove("light-theme");
             document.querySelector("#contact-me form #submit").classList.remove("light-theme");  
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 document.querySelector("#div-sections").classList.remove("dark-theme");
                 document.querySelector("h1").classList.remove("dark-theme");
                 document.querySelector("h2").classList.remove("dark-theme");
-                document.querySelector(".card").classList.remove("dark-theme");
+                document.querySelector(".cardsection").classList.remove("dark-theme");
                 document.querySelector("#contact-me form input").classList.remove("dark-theme");
                 document.querySelector("#contact-me form textarea").classList.remove("dark-theme");
                 document.querySelector("#contact-me form #submit").classList.remove("dark-theme");
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 document.querySelector("#div-sections").classList.add("light-theme");
                 document.querySelector("h1").classList.add("light-theme");
                 document.querySelector("h2").classList.add("light-theme");
-                document.querySelector(".card").classList.add("light-theme");
+                document.querySelector(".cardsection").classList.add("light-theme");
                 document.querySelector("#contact-me form input").classList.add("light-theme");
                 document.querySelector("#contact-me form textarea").classList.add("light-theme");
                 document.querySelector("#contact-me form #submit").classList.add("light-theme");  
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         document.querySelector("#div-sections").classList.toggle("dark-theme");
         document.querySelector("h1").classList.toggle("dark-theme");
         document.querySelector("h2").classList.toggle("dark-theme");
-        document.querySelector(".card").classList.toggle("dark-theme");
+        document.querySelector(".cardsection").classList.toggle("dark-theme");
         document.querySelector("#contact-me form input").classList.toggle("dark-theme");
         document.querySelector("#contact-me form textarea").classList.toggle("dark-theme");
         document.querySelector("#contact-me form #submit").classList.toggle("dark-theme");
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         document.querySelector("#div-sections").classList.toggle("light-theme");
         document.querySelector("h1").classList.toggle("light-theme");
         document.querySelector("h2").classList.toggle("light-theme");
-        document.querySelector(".card").classList.toggle("light-theme");
+        document.querySelector(".cardsection").classList.toggle("light-theme");
         document.querySelector("#contact-me form input").classList.toggle("light-theme");
         document.querySelector("#contact-me form textarea").classList.toggle("light-theme");
         document.querySelector("#contact-me form #submit").classList.toggle("light-theme");
