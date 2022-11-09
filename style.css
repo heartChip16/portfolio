@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x:hidden;
+}
+
 #nav-header {
-    padding: 4px;
-    margin-top:3px;
-    margin-bottom: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* margin-top:5px; */
+    margin-bottom: 5px;
     position:static;  /*either sticky or static, depends*/
     top: 0%;
     background-color: black;
@@ -35,6 +40,7 @@ footer {
     border-top: 2px solid;
     font-size: medium;
     color: #607d8b;
+    margin-bottom: 10px;
 }
 
 header nav section > a,section nav a {
@@ -43,6 +49,7 @@ header nav section > a,section nav a {
     color: #607d8b;
     border-radius: 5%;
     padding: 8px;
+
 }
 section nav ul {
     list-style: none;
@@ -53,21 +60,27 @@ section nav ul {
     list-style: none;
     text-decoration: none;
     margin: auto;
+    align-items: center;
+    padding: 5px;
 }
 
 header nav > a:last-child {
     margin-right: revert;
 }
 
-header nav > a:hover {
-     color: white; 
-     background-color:teal;
+header nav section > a:hover,section nav a:hover {
+     color: white ; 
+     background-color:teal ;
+     text-decoration: none;
+     /* padding: 4px; */
+     /* margin: 3px; */
 }
 
 header ul > li:hover {
     background-color:white;
     opacity: 50%;
     border-radius: 5px;
+    padding-bottom: 6px;
 }
 
 section {
@@ -93,11 +106,11 @@ body {
     /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 }
 
-.container {
+.container1 {
     padding: 16px;  
 }
 
-.container #div-sections  >section > h2 {
+.container1 #div-sections  >section > h2 {
 text-align: center;
 margin-top:40px;
 color: #607d8b;
@@ -152,7 +165,13 @@ color: #607d8b;
     height:20px;
     width:20px;
     margin:auto 10px;
+    align-items: center;
 }
+
+.social-links-navbar a{
+    padding: 10px;
+}
+
 
 .social-links-bottom {
     display: flex;
@@ -311,17 +330,19 @@ text-transform: none;
 
 #nav-header .default-nav {
     display: flex;
+    align-items: center;
+    align-self: center;
 }
 
 #theme-switcher1, #theme-switcher2 {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 5px;
     display: block;
     background:teal;
     color: white;
     border-radius: 5px;
     border: none;
     padding: 5px;
+    align-self: center;
 }
 
 
@@ -370,9 +391,10 @@ text-transform: none;
 #nav-header.dark-theme {
     background: #303f46;
     color: white;
-    padding: 4px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
 }
 
 .default-nav.dark-theme > a{
@@ -380,6 +402,8 @@ text-transform: none;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
 }
 
 #div-sections.dark-theme {
@@ -428,9 +452,9 @@ h1.dark-theme, h2.dark-theme {
 #nav-header.dark-theme {
     background: #303f46;
     color: white;
-    padding: 4px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .default-nav.dark-theme > a{
@@ -438,6 +462,9 @@ h1.dark-theme, h2.dark-theme {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+
 }
 
 #ingrid.dark-theme {
@@ -487,9 +514,12 @@ h1.dark-theme, h2.dark-theme {
     #nav-header {
         background: #303f46;
         color: white;
-        padding: 4px;
+        /* padding: 4px;
         margin-top: 3px;
-        margin-bottom: 3px;
+        margin-bottom: 3px; */
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-bottom: 5px;
     }
 
     .default-nav > a{
@@ -497,6 +527,8 @@ h1.dark-theme, h2.dark-theme {
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
+        align-items: center;
+        align-self: center;
     }
     .intro {
         background-color: black;
@@ -552,9 +584,9 @@ h1.dark-theme, h2.dark-theme {
     #nav-header.light-theme {
         background: black;
         color: whitesmoke;
-        padding: 4px;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-bottom: 5px;
     }
     /*not yet modified:*/
     .default-nav.light-theme > a{
@@ -619,6 +651,8 @@ h1.dark-theme, h2.dark-theme {
     .social-links-navbar {
         margin-right: 10px;
         margin-left: auto;
+        align-items: center;
+        padding: 5px;
     }
     .default-nav  {
         display:none;
@@ -661,6 +695,7 @@ h1.dark-theme, h2.dark-theme {
         margin-left: auto;
         margin-right: 10px;
         padding: 5px;
+        align-self: center;
     }
 
     #nav-header .default-nav section {
@@ -701,9 +736,10 @@ h1.dark-theme, h2.dark-theme {
     #nav-header {
         background: #303f46;
         color: white;
-        padding: 4px;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        /* padding-top: 10px; */
+        padding-bottom: 4px;
+        /* margin-top: 5px; */
+        margin-bottom: 5px;
     }
 
     .intro {
@@ -760,9 +796,10 @@ h1.dark-theme, h2.dark-theme {
     #nav-header.light-theme {
         background: black;
         color: whitesmoke;
-        padding: 4px;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        /* margin-top: 5px; */
+        margin-bottom: 5px;
     } 
         /* end of light-theme styles inside dark-theme */
 } 
