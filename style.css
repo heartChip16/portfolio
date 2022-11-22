@@ -240,7 +240,7 @@ p {
 
 #proficiency .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     gap: 10px;
 }
 
@@ -339,12 +339,13 @@ font-size: x-large;
 #theme-switcher1, #theme-switcher2 {
     margin: 5px;
     display: block;
-    background:teal;
-    color: white;
-    border-radius: 5px;
+     background:transparent;
+    /* border-radius: 5px; */
     border: none;
     padding: 5px;
     align-self: center;
+    border-style: none;
+    outline-style: none;
 }
 
 
@@ -700,7 +701,7 @@ font-size: x-large;
         display: block;
         background:transparent;
         color: white;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         margin-left: auto;
         margin-right: 10px;
         padding: 5px;
@@ -821,3 +822,5 @@ font-size: x-large;
 }
 
 /* end of media for mobile */
+
+
