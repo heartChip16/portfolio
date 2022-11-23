@@ -61,63 +61,45 @@
       </nav>
     </header>
     <main class="container1">
-      <article class="intro">
-        <div class="intro-left">
-          <br />
-          <div id="ingrid">Hi, I'm Ingrid</div>
-          <br />
-          <p class="online-font">
-            I am
-            <span id="dynamic-text" class="dynamic-text-color"></span>
-          </p>
-          <section id="about-me">
+      <div id="div-sectionss">
+        <section id="contact-me">
+          <form name="contact" id="contact" method="post" data-netlify="true">
             <div class="h2-divs">
-              <!-- <h2>About Me</h2> -->
+              <h2 style="text-align: center">Contact Me</h2>
             </div>
-            <p>An Electronics Engineer, shifting career as a Full Stack Web Developer.</p>
-            <p>My career as a developer started in August 2022 when I decided to learn web development. I shifted career to pursue my passion in programming and become a freelancer.</p>
-          </section>
-          <br />
-          <br />
-          <ul class="social-links-navbar desktop">
-            <li>
-              <a href="https://github.com/heartChip16" target="_blank"><img width="30" height="30" src="github.png" alt="Github Logo" /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ingrid-torres-3428782a/" target="_blank"><img width="30" height="30" src="linkedinlogo.png" alt="Linkedin Logo" /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ingrid_ibe" target="_blank"><img width="30" height="30" src="twitterlogo.png" alt="Twitter Logo" /></a>
-            </li>
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" required />
 
-            <li>
-              <a href="https://www.instagram.com/ingrid_ibe31/" target="_blank"><img width="30" height="30" src="instagram.png" alt="Instagram Logo" /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="intro-right">
-          <img id="profile-img" class="shakeme" src="./profile_formal2.png" alt="Ingrid Torres profile image" />
-          <br />
-          <ul class="social-links-navbar mobile">
-            <li>
-              <a href="https://github.com/heartChip16" target="_blank"><img width="30" height="30" src="github.png" alt="Github Logo" /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ingrid-torres-3428782a/" target="_blank"><img width="30" height="30" src="linkedinlogo.png" alt="Linkedin Logo" /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ingrid_ibe" target="_blank"><img width="30" height="30" src="twitterlogo.png" alt="Twitter Logo" /></a>
-            </li>
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" required />
 
-            <li>
-              <a href="https://www.instagram.com/ingrid_ibe31/" target="_blank"><img width="30" height="30" src="instagram.png" alt="Instagram Logo" /></a>
-            </li>
-          </ul>
-        </div>
-      </article>
+              <label for="message">Message</label>
+
+              <textarea name="message" id="message" cols="30" rows="5"></textarea>
+              <button type="submit" id="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       <br />
+      <ul class="social-links-navbar contacts" style="justify-content: center; mragin-bottom: 10px">
+        <li>
+          <a href="https://github.com/heartChip16" target="_blank"><img width="30" height="30" src="github.png" alt="Github Logo" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ingrid-torres-3428782a/" target="_blank"><img width="30" height="30" src="linkedinlogo.png" alt="Linkedin Logo" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ingrid_ibe" target="_blank"><img width="30" height="30" src="twitterlogo.png" alt="Twitter Logo" /></a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/ingrid_ibe31/" target="_blank"><img width="30" height="30" src="instagram.png" alt="Instagram Logo" /></a>
+        </li>
+      </ul>
       <p>©️2022 Engr. Ingrid Torres</p>
       <br />
     </footer>
@@ -137,5 +119,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
