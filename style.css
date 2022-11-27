@@ -1184,3 +1184,8 @@ transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
 .mysql {
     padding: 3px;
 }
+
+.proj-tech {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
