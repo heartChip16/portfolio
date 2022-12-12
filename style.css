@@ -1120,6 +1120,7 @@ display: block;
 display: flex;
 flex-direction: column;
 text-align: center;
+/* overflow: hidden; */
 }
 
 .proj-image {
@@ -1132,10 +1133,16 @@ text-align: center;
     margin-top: 30px;
     align-self: flex-end;
     padding: 5px;
-    /* border: 1px solid #63818f; */
+    
 transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
- 
 }
+
+
+.proj-image.proj5 {
+    width:100%;
+}
+ 
+
 
 .proj-image:hover {
     box-shadow: 3px 3px 14px 5px #607d8b;
