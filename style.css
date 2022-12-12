@@ -1133,7 +1133,7 @@ text-align: center;
     margin-top: 30px;
     align-self: flex-end;
     padding: 5px;
-    
+    box-shadow: 2px 2px 5px 3px #607d8b;
 transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
 }
 
@@ -1145,8 +1145,9 @@ transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
 
 
 .proj-image:hover {
-    box-shadow: 3px 3px 14px 5px #607d8b;
-    transform: translateY(calc(-1*var(--spacing-regular)));
+    /* box-shadow: 3px 3px 14px 5px #607d8b; */
+    transform: translate(calc(1*var(--spacing-regular)),calc(-1*var(--spacing-regular)));
+    transform: scale(1.05);
 }
 
   .li-proj.last{  
